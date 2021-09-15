@@ -10,7 +10,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class InitState extends State<SplashScreen> {
-
   @override
   void initState() {
     // ignore: todo
@@ -25,12 +24,12 @@ class InitState extends State<SplashScreen> {
   }
 
   loginRoute() {
-    Navigator.pushReplacement(context, MaterialPageRoute(
-        builder: (context) => LoginScreen()
-    ));
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => LoginScreen()));
   }
+
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return initWidget(context);
   }
 
